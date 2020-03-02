@@ -1,0 +1,83 @@
+/********************************************************************************
+ * Copyright (C) 2019 TypeFox and others.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * This Source Code may also be made available under the following Secondary
+ * Licenses when the conditions for such availability set forth in the Eclipse
+ * Public License v. 2.0 are satisfied: GNU General Public License, version 2
+ * with the GNU Classpath Exception which is available at
+ * https://www.gnu.org/software/classpath/license.html.
+ *
+ * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+ ********************************************************************************/
+
+.theia-vsx-registry .flexcontainer {
+    display: flex;
+}
+
+.theia-vsx-registry .no-wrap-info {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.theia-vsx-registry .row {
+    width: 100%;
+}
+
+.theia-vsx-registry .column {
+    flex-direction: column;
+}
+
+.theia-vsx-registry .extension-header-container {
+    margin-bottom: 5px;
+}
+
+.theia-vsx-registry .extension-button {
+    background-color: var(--theia-extensionButton-prominentBackground);
+    padding: 2px;
+    box-sizing: border-box;
+    color: var(--theia-extensionButton-prominentForeground);
+    width: 65px;
+    text-align: center;
+    font-size: var(--theia-ui-font-size0);
+    text-transform: uppercase;
+}
+
+.theia-vsx-registry .extension-button.working {
+    background-color: var(--theia-button-background);
+    color: var(--theia-button-foreground);
+    width: auto;
+}
+
+.theia-vsx-registry .extension-button:hover {
+    cursor: pointer;
+    background-color: var(--theia-extensionButton-prominentHoverBackground);
+}
+
+.theia-vsx-registry .extension-button.working:hover {
+    background-color: var(--theia-button-hoverBackground);
+    cursor: default;
+}
+
+.theia-vsx-registry .extension-button.installed {
+    background-color: var(--theia-button-background);
+}
+
+.theia-vsx-registry .extension-button.outdated {
+    background-color: var(--theia-button-background);
+}
+
+.theia-vsx-registry .extension-button.installed:hover {
+    background-color: var(--theia-button-hoverBackground);
+}
+
+.theia-vsx-registry .extension-button.outdated:hover {
+    background-color: var(--theia-button-hoverBackground);
+}
+
+@import './vsx-registry-list.css';
+@import './vsx-detail.css';
